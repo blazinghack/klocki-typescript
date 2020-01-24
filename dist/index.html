@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Klocki</title>
+    <style>
+        body {
+            margin: 0;
+            overscroll-behavior: contain;
+            overflow: hidden;
+        }
+
+        canvas {
+            image-rendering: pixelated;
+        }
+    </style>
+    <!--<script src="main.js"></script>-->
+    <script>
+
+
+        var imported = document.createElement('script');
+        imported.src = 'main.js?v='+((new Date).getTime());
+        document.head.appendChild(imported);
+    </script>
+</head>
+
+<body>
+<canvas id="klockicanvas"></canvas>
+</body>
+
+</html>
